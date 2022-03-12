@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDotCom</title>
+    <link rel="icon" href="devdotcom-logo.png" type="image/x-icon">
+    <link href="DevDotCom.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="logo-tiny.png">
+            <a href="Index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="WebDesign.html"><i class="fa fa-globe"></i>  Web Design</a>
+            <a href="ContactUs.html" class="active"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+        <script>function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }</script>
+    </nav>
+    <div class="contact-tc">
+        <h1>
+            Connect with
+            <span style="color: #0e3780;">Dev</span><span style="color: #FF8000;">Dot</span><span style="color: #6f6f6f;">Com</span>
+        </h1>
+    </div>
+
+    <div class="container-mid">
+        <h2>Please leave a brief description of the requested services below.</h2>
+    </div>
+    <div class="contact-mc">
+        <form action="https://formspree.io/f/xdoyzjwr"
+              method="post">
+
+            <label>Name: <span style="color: red;">*</span></label>
+            <input name="name" placeholder="Type Here">
+
+            <label>Email: <span style="color: red;">*</span></label>
+            <input name="email" type="email" placeholder="Type Here">
+
+            <label>Message: <span style="color: red;">*</span></label>
+            <textarea name="message" placeholder="Type Here"></textarea>
+            <div class="center">
+                <input id="submit" name="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="footer-one">
+        <h4 style="font-weight: bold;"><span style="color: #0e3780;">Dev</span><span style="color: #FF8000;">Dot</span><span style="color: ##6f6f6f;">Com</span></h4>
+
+        <span class="oi oi-phone" aria-hidden="true"></span> <a id="mobile" href="tel:727-492-6944">(727) 492-6944</a> <span id="desktop">(727) 492-6944</span><br>
+        <span class="oi oi-envelope-closed" aria-hidden="true"></span> <a href="mailto:info@devdotcom.net">info@devdotcom.net</a>
+    </div>
+
+    <div class="footer-two">
+
+    </div>
+
+    <div class="footer-bottom">
+        <a href="https://www.facebook.com/Dev-Dot-Com-110253974765234/?view_public_for=110253974765234"><img src="facebook.png" /></a>
+        <br />
+        &copy; 2022 DevDotCom, LLC All Rights Reserved
+    </div>
+</footer>
+</html>
